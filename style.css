@@ -18,7 +18,7 @@ body {
   font-family: "Poppins", sans-serif;
   display: flex;
   justify-content: center;
-  min-height: 99vh;
+  min-height: 50vh;
   flex-wrap: wrap;
   margin: 2px;
 }

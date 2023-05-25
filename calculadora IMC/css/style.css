@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200;400&family=Poppins:wght@100;200;300&family=Roboto:wght@300&display=swap");
+
+:root {
+  --primary-color: #078c9b;
+  --secudary-color: #fff;
+  --btn-color:#0a8eda;
+  --resultado--conta:#1cd453;
+}
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primary-color);
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  min-height: 99vh;
+  flex-wrap: wrap;
+  margin: 2px;
+}
+
+.container{
+    width: 450px;
+    margin-top: 10px;
+    height: 550px;
+    border-radius: 1.3em;
+    padding: 30px;
+    background-color: var(--secudary-color);
+}
+.organiza{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+form{
+    margin-top: 20px;
+}
+
+form input, label{
+    display: block;
+    height: 40px;
+    width: 100%;
+}
+form input{
+    font-size: 1.2em;
+}
+form label{
+    font-size: 1.3em;
+}
+
+form input[type="submit"]{
+    background-color: var(--btn-color);
+    margin-top: 20px;
+    color:var(--secudary-color);
+    font-size: 1.2em;
+    border: none;
+    font-size: 1.3em;
+}
+form input:focus{
+    outline: 1px solid var(--btn-color);
+}
+#resultado{
+    margin-top: 15px;
+    width: 100%;
+    /* background-color: var(--resultado--conta); */
+    font-size: 1.3em;
+   
+}
+
+.p-certo{
+    background-color: #0fe384;
+    font-size: 0.8em;
+}
+
+.p-errado{
+    background-color: #e30f0f;
+    font-size: 0.8em;
+}

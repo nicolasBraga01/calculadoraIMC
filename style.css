@@ -3,8 +3,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200;400&family=Poppins:wght@100;200;300&family=Roboto:wght@300&display=swap");
 
 :root {
-  --primary-color: #727979;
-  --secudary-color: #e9e6e6;
+  --primary-color: #319b9b;
+  --secudary-color: #ffffff;
   --btn-color:#0a8eda;
   --resultado--conta:#1cd453;
 }
@@ -16,12 +16,11 @@
 }
 
 body {
-    background-image: linear-gradient(180deg, rgb(38, 201, 230), rgb(178, 178, 170));
+    background-color: var(--primary-color);
   font-family: "Poppins", sans-serif;
   display: flex;
   justify-content: center;
   height: 100vh;
-  flex-wrap: wrap;
   margin: 12px;
   overflow: hidden;
 }
@@ -95,7 +94,7 @@ form input:focus{
         font-size: 0.9em;
     }
     .container{
-        margin-top: 2em;
+        margin-top: 2.7em;
     }
 }
 

@@ -1,8 +1,10 @@
+
+@charset "utf-8";
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200;400&family=Poppins:wght@100;200;300&family=Roboto:wght@300&display=swap");
 
 :root {
-  --primary-color: #078c9b;
-  --secudary-color: #fff;
+  --primary-color: #727979;
+  --secudary-color: #e9e6e6;
   --btn-color:#0a8eda;
   --resultado--conta:#1cd453;
 }
@@ -14,7 +16,7 @@
 }
 
 body {
-  background-color: var(--primary-color);
+    background-image: linear-gradient(180deg, rgb(38, 201, 230), rgb(178, 178, 170));
   font-family: "Poppins", sans-serif;
   display: flex;
   justify-content: center;
@@ -27,17 +29,17 @@ body {
     width: 450px;
     height: 550px;
     border-radius: 1.3em;
-    padding: 30px;
+    padding: 1.8em;
     background-color: var(--secudary-color);
 }
 .organiza{
     display: flex;
-    justify-content: space-evenly;
-    margin-top: 10px;
+    justify-content: space-between;
+    margin-top: .4em;
 }
 
 form{
-    margin-top: 20px;
+    margin-top: 1.3em;
 }
 
 form input, label{
@@ -54,11 +56,16 @@ form label{
 
 form input[type="submit"]{
     background-color: var(--btn-color);
-    margin-top: 20px;
+    margin-top: 1.2em;
     color:var(--secudary-color);
     font-size: 1.2em;
     border: none;
     font-size: 1.3em;
+    cursor: pointer;
+    border-radius: 0.4em;
+}
+form input[type="submit"]:hover{
+    background-color: rgba(0, 0, 0, 0.7 );
 }
 form input:focus{
     outline: 1px solid var(--btn-color);
@@ -74,16 +81,21 @@ form input:focus{
 .p-certo{
     background-color: #0fe384;
     font-size: 0.8em;
+    padding: 0.7%
 }
 
 .p-errado{
     background-color: #e30f0f;
     font-size: 0.8em;
+    padding: 2%
 }
 
 @media screen and (max-width:667px){
     p{
-        font-size: 0.8em;
+        font-size: 0.9em;
+    }
+    .container{
+        margin-top: 2em;
     }
 }
 

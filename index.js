@@ -12,7 +12,6 @@ form.addEventListener("submit", function (e) {
   const peso = Number(document.querySelector("#peso").value);
   const altura = Number(document.querySelector("#altura").value);
   console.log(peso, altura);
-
   //caso peso não seja um número "faça isso"
   if (!peso) {
     setResultado("peso invalido", false);
@@ -21,6 +20,14 @@ form.addEventListener("submit", function (e) {
   //caso a altura não seja um número "faça isso"
   if (!altura) {
     setResultado("altura invalida", false);
+    return;
+  }
+  if ( peso >= 300){
+    setResultado("peso acima do limite ", false);
+    return;
+  }
+  if ( altura >= 3){
+    setResultado("altura acima do limite ", false);
     return;
   }
   const calculoImc = parseFloat(peso / altura ** 2);

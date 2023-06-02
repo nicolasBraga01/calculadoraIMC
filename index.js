@@ -1,18 +1,28 @@
 
 alert('Ainda em fase de desenvolvimento')
 const form = document.querySelector("#form");
-
 form.addEventListener("submit", function (e) {
   // e = evento de forma abreviada
 
   //não vai deixar o formulário ser enviado
   e.preventDefault();
 
+  // const input = document.querySelector('.input').value;
+  // input.addEventListener("input", function (event) {
+  //   const valorAtual = event.target.value;
+  //   const novoValor = valorAtual.replace(",", ".")
+
+  //   if (valorAtual !== novoValor) {
+  //     input.value = novoValor;
+  //   }
+
+  // })
   // console.log('passou')
 
   //pega os valores e transforma em número
   const peso = Number(document.querySelector("#peso").value);
   const altura = Number(document.querySelector("#altura").value);
+
   console.log(peso, altura);
   //caso peso não seja um número "faça isso"
   if (!peso) {
@@ -24,11 +34,15 @@ form.addEventListener("submit", function (e) {
     setResultado("altura invalida", false);
     return;
   }
-  if ( peso >= 300){
+  if (peso >= 200) {
     setResultado("peso acima do limite ", false);
     return;
   }
-  if ( altura >= 3){
+  if (peso <= 20) {
+    setResultado("peso abaixo do limite ", false);
+    return;
+  }
+  if (altura >= 3) {
     setResultado("altura acima do limite ", false);
     return;
   }
@@ -67,7 +81,7 @@ function infoImc(calculoImc) {
 
   if (calculoImc <= 39.9) return infoIMc[4];
 
-  if (calculoImc > 40) return infoIMc[5];
+  if (calculoImc >= 40) return infoIMc[5];
 }
 function setResultado(mensagem, isVAlid) {
   const resultado = document.querySelector("#resultado");

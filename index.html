@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="index.js" defer></script>
-    <link rel="stylesheet" href="style.css">
     <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="/assets/js/index.js" defer></script>
 </head>
 <body>
-    <!-- teste -->
     <section class="container">
+        <h1>Calculadora IMC</h1>
         <div class="organiza">
             <div class="blocoImc">
                 <h3>IMC</h3>
@@ -31,14 +31,16 @@
                 <p>Obesidade grau 3</p>
             </div>
         </div>
+
         <form action="/" id="form" method="post">
             <label for="peso">Peso</label>
-            <input type="text" name="peso" autofocus id="peso"  placeholder="00.0" maxlength="4" class="input">
+            <input type="text" name="peso" id="peso" placeholder="00.0" maxlength="4" class="input" required>
             <label for="altura">Altura</label>
-            <input type="text" id="altura"  placeholder="0.00" maxlength="4" class="input">
-            <input type="submit" value="calcular">
+            <input type="text" name="altura" id="altura" placeholder="0.00" maxlength="4" class="input" " required>
+            <span id="posiciona"><input type="submit" class="button type1 btn-txt" value="calcular"></span>
         </form>
-       <div id="resultado"></div>
+
+        <div id="resultado"></div>
     </section>
 </body>
 </html>
